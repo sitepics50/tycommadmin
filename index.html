@@ -10,9 +10,95 @@
    <div style="width:100%; height:100%; position:fixed;top:0%;right:0%;"><div id="rt-ddbf6678869d80608818cf3b5b926dfd"></div> <script src="https://rumbletalk.com/client/?5flzMDXL"></script></div>
  
  
+ 
+ 
+ <div style="position:fixed;bottom:2%;left:12%;font-size:25px;font-family:monospace;"id="openPopup">💬</div>   
     
     
+ <div id="popup">
+ 
+ 
+  <button id="closePopup">Back</button>
+ 
+ 
+ 
+     <script id="cid0020000394593834809" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 100%; height:100%;position: fixed;top:0%;left:0%;">{"handle":"tycommvipgroup","arch":"js","styles":{"a":"000000","b":100,"c":"FFFFFF","d":"ffffff","e":"000000","f":100,"g":"ffffff","k":"ffffff","l":"000000","m":"000000","n":"FFFFFF","o":100,"p":"11","q":"4B5320","r":1,"s":1,"t":1,"v":0,"showhdr":0,"surl":0,"usricon":1,"useonm":1,"useonm":1,"showx":0,"sbc":"ffffff","cvfg":100,"fwtickm":0,"allowpm":0,"cnrs":"1"}}</script>
+   </div> 
     
-    
+
+ 
+ 
+ 
+  
+  
+  
+  
+  
+  
+  
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#popup button#closePopup {
+ position:fixed;
+ top:1%;
+ right:1%;
+ border-radius:5px;
+ font-family:monospace;
+background-color:Red;
+  border: none;
+  font-size: 14px;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color:Red;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+</style>
+
+
+<script>
+const openPopupBtn = document.getElementById('openPopup');
+const closePopupBtn = document.getElementById('closePopup');
+const popup = document.getElementById('popup');
+
+openPopupBtn.addEventListener('click', () => {
+  popup.style.display = 'block';
+});
+
+closePopupBtn.addEventListener('click', () => {
+  popup.style.display = 'none';
+});
+
+</script>
+
 </body>
 </html>
